@@ -1,0 +1,21 @@
+<!--pages/message/message.wxml-->
+<view class="container">
+  <view class="nav-list">
+    <block wx:for="{{navList}}" wx:key="{{index}}">
+      <view bindtap="navClick" id="{{index}}" class="nav-list-item {{activeIndex == index ? 'nav-active' : ''}}" data-id="{{item.id}}">{{item.name}}</view>
+    </block>
+  </view>
+  <view hidden="{{activeIndex!=0}}" class="item-one">
+    <view class="content">
+      <view class="item">
+        
+      </view>
+    </view>
+  </view>
+  <view hidden="{{activeIndex!=1}}" class="item-two">
+    222
+  </view>
+  <view hidden="{{activeIndex!=2}}" class="item-three">
+    333
+  </view>
+</view>

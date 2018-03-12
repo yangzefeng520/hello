@@ -1,0 +1,134 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- banner -->
+  <view class="banner">
+    <swiper class="banner-box" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{1000}}">
+      <block wx:for="{{banner}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="http://h5.lwest.cn/hellot_admin/thinkphp3/Public/uploads/{{item.thumb}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 导航 -->
+  <view class="nav">
+    <view class="nav-list">
+      <block wx:for="{{navList}}" wx:key="{{index}}">
+        <view bindtap="navClick" id="{{index}}" class="nav-list-item {{activeIndex == index ? 'nav-active' : ''}}" data-index="{{item.id}}">{{item.name}}</view>
+      </block>
+    </view>
+  </view>
+
+  <view hidden="{{activeIndex!=0}}" class="item-one">
+    <scroll-view style="height: {{scrollHeight}}px">
+      <block wx:for="{{scrollList}}" wx:key="{{index}}">
+        <view class="one-item">
+          <image class="one-item-img" src="{{item.thumb}}"></image>
+          <view class="one-item-title">{{item.title}}</view>
+          <view class="one-item-content">
+            <view class="item-tt">
+              <text>汀图</text>
+              <text>朗文斯汀</text>
+            </view>
+            <view class="item-like">
+              <view class="xin"></view>
+              <text>2</text>
+              <view class="meg"></view>
+              <text>2</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <view hidden="{{activeIndex!=1}}" class="item-two">
+    <scroll-view style="height: {{scrollHeight}}px">
+      <block wx:for="{{scrollList}}" wx:key="{{index}}">
+        <view class="one-item">
+          <image class="one-item-img" src="{{item.thumb}}"></image>
+          <view class="one-item-title">{{item.title}}</view>
+          <view class="one-item-content">
+            <view class="item-tt">
+              <text>汀图</text>
+              <text>朗文斯汀</text>
+            </view>
+            <view class="item-like">
+              <view class="xin"></view>
+              <text>2</text>
+              <view class="meg"></view>
+              <text>2</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view hidden="{{activeIndex!=2}}" class="item-three">
+    <scroll-view style="height: {{scrollHeight}}px">
+      <block wx:for="{{scrollList}}" wx:key="{{index}}">
+        <view class="one-item">
+          <image class="one-item-img" src="{{item.thumb}}"></image>
+          <view class="one-item-title">{{item.title}}</view>
+          <view class="one-item-content">
+            <view class="item-tt">
+              <text>汀图</text>
+              <text>朗文斯汀</text>
+            </view>
+            <view class="item-like">
+              <view class="xin"></view>
+              <text>2</text>
+              <view class="meg"></view>
+              <text>2</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view wx:if="activeIndex=3" hidden="{{activeIndex!=3}}" class="item-four">
+    <scroll-view style="height: {{scrollHeight}}px">
+      <block wx:for="{{scrollList}}" wx:key="{{index}}">
+        <view class="one-item">
+          <image class="one-item-img" src="{{item.thumb}}"></image>
+          <view class="one-item-title">{{item.name}}</view>
+          <!-- <view class="one-item-content">
+            <view class="item-tt">
+              <text>汀图</text>
+              <text>朗文斯汀</text>
+            </view>
+            <view class="item-like">
+              <view class="xin"></view>
+              <text>2</text>
+              <view class="meg"></view>
+              <text>2</text>
+            </view>
+          </view> -->
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view hidden="{{activeIndex!=4}}" class="item-five">
+    <scroll-view style="height: {{scrollHeight}}px">
+      <block wx:for="{{scrollList}}" wx:key="{{index}}">
+        <view class="one-item">
+          <image class="one-item-img" src="{{item.thumb}}"></image>
+          <view class="one-item-title">{{item.title}}</view>
+          <view class="one-item-content">
+            <view class="item-tt">
+              <text>汀图</text>
+              <text>朗文斯汀</text>
+            </view>
+            <view class="item-like">
+              <view class="xin"></view>
+              <text>2</text>
+              <view class="meg"></view>
+              <text>2</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+</view>

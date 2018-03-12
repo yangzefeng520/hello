@@ -1,0 +1,14 @@
+<!--pages/publish/publish.wxml-->
+<!-- <view class="container">
+  <view class="header">
+    <view>取消</view>
+    <view class="header-center">写文章</view>
+    <view class="header-right">
+      <text>预览<   </view> 
+
+  <view class="title-input">
+    <input placeholder="标题" value="{{title}}" />
+  </view>
+  <textarea bindblur="blur" hidden="{{textareahide}}" value="{{textarea}}" placeholder="分享美好生活方式" class="content-focus" maxlength="-1" auto-height="true" auto-focus="{{focus}}"></textarea>
+
+</view> -->

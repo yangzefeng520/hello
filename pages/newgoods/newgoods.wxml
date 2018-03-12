@@ -1,0 +1,67 @@
+<view class="container">
+  <view class="phone_one" bindtap="clickPerson">
+    <view>年份</view>
+    <view class="phone_personal">
+      {{firstPerson}}
+      <image src="../../img/newgoods/topicon.png" class="personal_image {{selectArea ? 'rotateRight' :''}}"></image>
+    </view>
+    <view class="phone_select" hidden="{{selectPerson}}">
+      <view class="select_one" bindtap="mySelect" data-me="2018">2018</view>
+      <view class="select_one" bindtap="mySelect" data-me="2017">2017</view>
+      <view class="select_one" bindtap="mySelect" data-me="2016">2016</view>
+      <view class="select_one" bindtap="mySelect" data-me="2015">2015</view>
+      <view class="select_one" bindtap="mySelect" data-me="2014">2014</view>
+      <view class="select_one" bindtap="mySelect" data-me="2013">2013</view>
+      <view class="select_one" bindtap="mySelect" data-me="2012">2012</view>
+    </view>
+  </view> 
+
+  <view class="phone_two" bindtap="clickjidu">
+    <view>季度</view>
+    <view class="phone_jidu">
+      {{firstjidu}}
+      <image src="../../img/newgoods/topicon.png" class="personal_image {{selectArea2 ? 'rotateRight' :''}}"></image>
+    </view>
+    <view class="jidu_select" hidden="{{selectjidu}}">
+      <view class="select_two" bindtap="mySelectjidu" data-me="春">春</view>
+      <view class="select_two" bindtap="mySelectjidu" data-me="夏">夏</view>
+      <view class="select_two" bindtap="mySelectjidu" data-me="秋">秋</view>
+      <view class="select_two" bindtap="mySelectjidu" data-me="冬">冬</view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="weui-cell">
+      <view>服装质量</view>
+      <view class="star-pos" style="display:flex;flex-direction:row;">
+        <view class="stars  {{flag>=1? 'on': ''}}"  bindtap="changeColor1"></view>
+        <view class="stars  {{flag>=2? 'on': ''}}"  bindtap="changeColor2"></view>
+        <view class="stars  {{flag>=3? 'on': ''}}"  bindtap="changeColor3"></view>
+        <view class="stars  {{flag>=4? 'on': ''}}"  bindtap="changeColor4"></view>
+        <view class="stars  {{flag>=5? 'on': ''}}"  bindtap="changeColor5"></view>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view>季度款式</view>
+      <view class="star-pos" style="display:flex;flex-direction:row;">
+        <view class="stars  {{flag2>=1? 'on': ''}}"  bindtap="changeClothes1"></view>
+        <view class="stars  {{flag2>=2? 'on': ''}}"  bindtap="changeClothes2"></view>
+        <view class="stars  {{flag2>=3? 'on': ''}}"  bindtap="changeClothes3"></view>
+        <view class="stars  {{flag2>=4? 'on': ''}}"  bindtap="changeClothes4"></view>
+        <view class="stars  {{flag2>=5? 'on': ''}}"  bindtap="changeClothes5"></view>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view>销售情况</view>
+      <view class="star-pos" style="display:flex;flex-direction:row;">
+        <view class="stars  {{flag3>=1? 'on': ''}}"  bindtap="changeshop1"></view>
+        <view class="stars  {{flag3>=2? 'on': ''}}"  bindtap="changeshop2"></view>
+        <view class="stars  {{flag3>=3? 'on': ''}}"  bindtap="changeshop3"></view>
+        <view class="stars  {{flag3>=4? 'on': ''}}"  bindtap="changeshop4"></view>
+        <view class="stars  {{flag3>=5? 'on': ''}}"  bindtap="changeshop5"></view>
+      </view>
+    </view>
+  </view>
+
+  <button class="weui-btn" type="warn" bindtap="sendata">下一步</button>
+  </view>

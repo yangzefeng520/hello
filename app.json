@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/publish/publish",
+    "pages/editquality/editquality",
+    "pages/message/message",
+    "pages/woting/woting",
+    "pages/newgoods/newgoods",
+    "pages/editnewgoods/editnewgoods"
+    
+  ],
+  "tabBar": {
+    "selectedColor": "#ec5155",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/tabicon/home.png",
+        "selectedIconPath": "img/tabicon/Select-home.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "img/tabicon/message.png",
+        "selectedIconPath": "img/tabicon/message-select.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "Potu",
+        "iconPath": "img/tabicon/potu.png",
+        "selectedIconPath": "img/tabicon/potu.png"
+      },
+      {
+        "pagePath": "pages/woting/woting",
+        "text": "我★汀",
+        "iconPath": "img/tabicon/ting.png",
+        "selectedIconPath": "img/tabicon/ting-select.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我",
+        "iconPath": "img/tabicon/me.png",
+        "selectedIconPath": "img/tabicon/me-select.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+}

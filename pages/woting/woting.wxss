@@ -1,0 +1,4 @@
+/* pages/woting/woting.wxss */
+.weui-cell__bd{
+  font-size: 14px;
+}
