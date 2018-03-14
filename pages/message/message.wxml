@@ -7,15 +7,55 @@
   </view>
   <view hidden="{{activeIndex!=0}}" class="item-one">
     <view class="content">
-      <view class="item">
-        
-      </view>
+      <block wx:for="{{dataInfo.note}}" wx:key="index">
+        <view class="item">
+          <view class="item-list">
+            <image class="photoview" src="http://wx.qlogo.cn/mmopen/jJtbwFuzNwAv1lsyedBEHoqqSiazVYH0LqenXXpicD9HdDja0uGbWSRHQjia7ZFRoRzCmickPjU49wWicoia8Pb8ywag/0"></image>
+            <text style="width:200rpx;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;line-height:30px;">{{item.title}}</text>
+          </view>
+          <view class="item-list">
+            <text>{{item.createtime}}</text>
+          </view>
+
+        </view>
+      </block>
+
     </view>
   </view>
   <view hidden="{{activeIndex!=1}}" class="item-two">
-    222
+    <view class="content">
+      <block wx:for="{{dataInfo.message}}" wx:key="index">
+        <view class="item">
+          <view class="item-list">
+            <image class="photoview" src="{{item.avatar}}"></image>
+            <text>{{item.nickname}}为你点赞</text>
+          </view>
+          <view class="item-list">
+            <image class="like-xin" src="http://h5.lwest.cn/we7/addons/lwx_helloting/template/mobile/public/images/common_btn_like_s.png"></image>
+            <text>+1</text>
+          </view>
+
+        </view>
+      </block>
+
+    </view>
   </view>
-  <view hidden="{{activeIndex!=2}}" class="item-three">
-    333
-  </view>
+  <!-- <view hidden="{{activeIndex!=2}}" class="item-three">
+    <view class="content">
+      <block wx:for="{{dataInfo.commit}}" wx:key="index">
+        <view class="item">
+          <view class="item-list">
+            <image class="photoview" src="http://wx.qlogo.cn/mmopen/jJtbwFuzNwAv1lsyedBEHoqqSiazVYH0LqenXXpicD9HdDja0uGbWSRHQjia7ZFRoRzCmickPjU49wWicoia8Pb8ywag/0"></image>
+            <text style="width:200rpx;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;line-height:30px;">{{item.title}}</text>
+            <text>aaaaa</text>
+          </view>
+          <view class="item-list">
+            <text>{{item.createtime}}</text>
+          </view>
+
+        </view>
+      </block>
+
+    </view> -->
+<!-- </view> -->
 </view>
